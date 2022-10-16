@@ -10,7 +10,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var displayLabel: UILabel!
-    // This is a calculator app made by Fozilkhon Bakhtiyarov
+    
     var stillTyping = false
     var firstOperand: Double = 0
     var secondOperand: Double = 0
@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         model.operationSignPressed(signOperands: digit!)
     }
     
-    @IBAction func equalSignPressed(_ sender: UIButton) {
+    @IBAction func equalSignPressed(_ sender: UIButton) {q
         model.equalSignPressed()
         displayLabel.text = model.displayLabel
     }

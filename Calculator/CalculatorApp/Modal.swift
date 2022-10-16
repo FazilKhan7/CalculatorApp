@@ -32,6 +32,7 @@ struct Modal {
     
     mutating func digitKeyPressed(key: String){
         let number = key
+        
         if stillTyping {
             displayLabel = displayLabel + number
         }else{
